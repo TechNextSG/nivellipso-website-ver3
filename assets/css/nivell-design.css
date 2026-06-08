@@ -400,8 +400,10 @@ img{max-width:100%;display:block;}
   .n-hamburger{display:flex !important;}
   /* Show lang-btn in nav on mobile, hide social icons */
   nav .n-social{display:none !important;}
-  nav .lang-btn{display:flex !important;padding:5px 8px;font-size:11px;gap:3px;}
-  nav .lang-btn #lCode{display:none;}
+  nav .lang-btn{display:flex !important;padding:5px 10px;font-size:12px;font-weight:700;gap:3px;border:1px solid var(--border);}
+  /* Hide flag emoji (renders as "GB" text on many Android devices) — show code text only */
+  nav .lang-btn #lFlag{display:none;}
+  nav .lang-btn #lCode{display:inline !important;}
   /* Compact Doctor Portal — same red filled style as desktop, just smaller */
   nav .btn-3d{padding:9px 16px !important;font-size:12px !important;min-height:unset !important;box-shadow:0 3px 0 var(--red-dark) !important;}
   .n-page-hero{margin-top:64px;padding:44px 20px 36px;}
