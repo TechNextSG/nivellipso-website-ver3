@@ -59,18 +59,18 @@
 .vt-stat-l{font-size:10px;color:rgba(255,255,255,.35);text-transform:uppercase;letter-spacing:1.5px;margin-top:4px;}
 .vt-phone{display:flex;justify-content:center;position:relative;}
 .vt-phone::before{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:260px;height:260px;background:rgba(192,0,0,.1);border-radius:50%;}
-.vt-phone-device{width:220px;background:#1e1e1e;border-radius:32px;padding:10px;box-shadow:0 24px 64px rgba(0,0,0,.5);position:relative;z-index:1;}
-.vt-phone-device::before{content:'';position:absolute;top:16px;left:50%;transform:translateX(-50%);width:50px;height:4px;background:rgba(255,255,255,.15);border-radius:2px;}
-.vt-screen{background:white;border-radius:24px;overflow:hidden;}
-.vt-screen-top{background:var(--red);padding:18px 14px 12px;display:flex;align-items:center;justify-content:space-between;}
-.vt-screen-body{padding:14px;}
-.vt-prog{background:var(--bg);border-radius:8px;padding:12px;margin-bottom:10px;}
-.vt-prog-bar{background:#e0e0e0;height:5px;border-radius:3px;margin:6px 0;}
-.vt-prog-fill{background:var(--red);height:5px;border-radius:3px;width:57%;}
-.vt-chat-out{background:var(--red);color:white;border-radius:8px 8px 2px 8px;padding:8px 10px;font-size:9px;margin-bottom:4px;line-height:1.4;}
-.vt-chat-in{background:var(--bg);border-radius:8px 8px 8px 2px;padding:8px 10px;font-size:9px;color:var(--text);margin-bottom:4px;line-height:1.4;}
-.vt-tabs{display:flex;border-top:1px solid var(--border);}
-.vt-tab{flex:1;padding:7px 0;text-align:center;font-size:7px;color:var(--grey);}
+.vt-phone-device{width:240px;background:#1e1e1e;border-radius:36px;padding:10px;box-shadow:0 28px 72px rgba(0,0,0,.55);position:relative;z-index:1;}
+.vt-phone-device::before{content:'';position:absolute;top:16px;left:50%;transform:translateX(-50%);width:56px;height:5px;background:rgba(255,255,255,.18);border-radius:3px;}
+.vt-screen{background:white;border-radius:28px;overflow:hidden;display:flex;flex-direction:column;min-height:480px;}
+.vt-screen-top{background:var(--red);padding:20px 16px 14px;display:flex;align-items:center;justify-content:space-between;flex-shrink:0;}
+.vt-screen-body{padding:16px;flex:1;}
+.vt-prog{background:var(--bg);border-radius:10px;padding:14px;margin-bottom:14px;}
+.vt-prog-bar{background:#e0e0e0;height:6px;border-radius:3px;margin:8px 0;}
+.vt-prog-fill{background:var(--red);height:6px;border-radius:3px;width:57%;}
+.vt-chat-out{background:var(--red);color:white;border-radius:10px 10px 2px 10px;padding:10px 12px;font-size:11px;margin-bottom:6px;line-height:1.45;}
+.vt-chat-in{background:var(--bg);border-radius:10px 10px 10px 2px;padding:10px 12px;font-size:11px;color:var(--text);margin-bottom:6px;line-height:1.45;}
+.vt-tabs{display:flex;border-top:1px solid var(--border);flex-shrink:0;margin-top:auto;}
+.vt-tab{flex:1;padding:10px 0 8px;text-align:center;font-size:10px;color:var(--grey);}
 .vt-tab.a{color:var(--red);}
 
 /* 3-ALIGNER SECTION */
@@ -212,10 +212,9 @@
   .visibal-teaser{padding:52px 20px;}
   .visibal-teaser-inner{grid-template-columns:1fr !important;gap:36px;}
   .vt-phone{justify-content:center;margin-top:16px;}
-  .vt-phone::before{width:300px;height:300px;}
-  .vt-phone-device{width:260px;}
-  .vt-screen-top{padding:20px 16px 14px;}
-  .vt-screen-body{padding:16px;}
+  .vt-phone::before{width:320px;height:320px;}
+  .vt-phone-device{width:280px;}
+  .vt-screen{min-height:520px;}
   /* VISIBAL bullets: stack the 2-col grid */
   .vis-split-grid{grid-template-columns:1fr !important;gap:16px !important;}
 
@@ -402,24 +401,24 @@
 <div class="vt-phone n-fade n-fade-d1">
 <div class="vt-phone-device">
 <div class="vt-screen">
-<div class="vt-screen-top"><span data-i18n="ix_e65" style="font-size:12px;font-weight:700;color:white;">VISIBAL</span><span style="font-size:16px;">🦷</span></div>
-<div style="padding:12px;">
-<div data-i18n="ix_e66" style="font-size:10px;color:var(--grey);margin-bottom:8px;font-weight:700;letter-spacing:1px;">TREATMENT</div>
+<div class="vt-screen-top"><span data-i18n="ix_e65" style="font-size:14px;font-weight:700;color:white;">VISIBAL</span><span style="font-size:20px;">🦷</span></div>
+<div style="padding:16px;">
+<div data-i18n="ix_e66" style="font-size:11px;color:var(--grey);margin-bottom:10px;font-weight:700;letter-spacing:1.5px;">BEHANDLUNGSFORTSCHRITT</div>
 <div class="vt-prog">
-<div data-i18n="ix_e78" style="font-size:9px;font-weight:700;color:var(--black);">Aligner 8 of 14 · REGULAR</div>
+<div data-i18n="ix_e78" style="font-size:11px;font-weight:700;color:var(--black);margin-bottom:4px;">Aligner 8 of 14 · REGULAR</div>
 <div class="vt-prog-bar"><div class="vt-prog-fill"></div></div>
-<div style="display:flex;justify-content:space-between;font-size:8px;color:var(--grey);"><span data-i18n="ix_e85">Start</span><span style="color:var(--red);font-weight:700;">57%</span><span data-i18n="ix_e86">Done</span></div>
+<div style="display:flex;justify-content:space-between;font-size:10px;color:var(--grey);margin-top:4px;"><span data-i18n="ix_e85">Start</span><span style="color:var(--red);font-weight:700;">57%</span><span data-i18n="ix_e86">Fertig</span></div>
 </div>
-<div data-i18n="ix_e67" style="font-size:10px;color:var(--grey);margin:8px 0 6px;font-weight:700;letter-spacing:1px;">ONLINE ASSISTANT</div>
-<div class="vt-chat-out" data-i18n="ix_e68">Aligner pressing on tooth 12?</div>
-<div class="vt-chat-in" data-i18n="ix_e69">Normal in the REGULAR phase. Pressure = active movement. 2–3 days, then it improves. ✓</div>
-<div data-i18n="ix_e70" style="margin-top:8px;background:#f0fff4;border-left:2px solid #2d8a4e;padding:7px 9px;font-size:9px;color:#2d8a4e;"><strong>Today: 21h 40min</strong> · Goal reached ✓</div>
+<div data-i18n="ix_e67" style="font-size:11px;color:var(--grey);margin:12px 0 8px;font-weight:700;letter-spacing:1.5px;">ONLINE-ASSISTENT</div>
+<div class="vt-chat-out" data-i18n="ix_e68">Die Schiene drückt bei Zahn 12, ist das normal?</div>
+<div class="vt-chat-in" data-i18n="ix_e69">Ja, völlig normal in der REGULAR-Phase. Der Druck zeigt aktive Zahnbewegung. In 2–3 Tagen besser. ✓</div>
+<div data-i18n="ix_e70" style="margin-top:10px;background:#f0fff4;border-left:3px solid #2d8a4e;padding:9px 12px;font-size:11px;color:#2d8a4e;"><strong>Heute: 21h 40min</strong> · Ziel fast erreicht 👍</div>
 </div>
 <div class="vt-tabs">
-<div class="vt-tab a"><div>📊</div>Progress</div>
-<div class="vt-tab"><div>💬</div>Chat</div>
-<div class="vt-tab"><div>📷</div>Photos</div>
-<div class="vt-tab"><div>⚙️</div>Practice</div>
+<div class="vt-tab a"><div>📊</div><span data-i18n="tab_verlauf">Verlauf</span></div>
+<div class="vt-tab"><div>💬</div><span data-i18n="tab_chat">Chat</span></div>
+<div class="vt-tab"><div>📷</div><span data-i18n="tab_fotos">Fotos</span></div>
+<div class="vt-tab"><div>⚙️</div><span data-i18n="tab_praxis">Praxis</span></div>
 </div>
 </div>
 </div>
