@@ -204,9 +204,13 @@
 
 /* ══ MOBILE RESPONSIVE (640px) ══════════════════════════════════════════ */
 @media(max-width:640px){
-  /* Product cards */
-  .prod-card{padding:24px 20px;}
-  .prod-name{font-size:16px;}
+  /* Product cards — icon + name on one row */
+  .prod-card{padding:20px 16px;display:grid;grid-template-columns:36px 1fr;grid-template-rows:auto auto auto;column-gap:12px;align-items:start;}
+  .prod-num{grid-column:1/-1;margin-bottom:10px;}
+  .prod-ico{grid-column:1;grid-row:2;width:32px;height:32px;margin-bottom:0;align-self:center;}
+  .prod-name{grid-column:2;grid-row:2;font-size:14px;margin-bottom:0;align-self:center;}
+  .prod-desc{grid-column:1/-1;grid-row:3;margin-top:8px;}
+  .prod-link{grid-column:1/-1;}
 
   /* VISIBAL teaser — stack columns */
   .visibal-teaser{padding:52px 20px;}

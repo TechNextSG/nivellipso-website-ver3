@@ -416,7 +416,7 @@ img{max-width:100%;display:block;}
   .n-stat:nth-last-child(-n+2){border-bottom:none;}
   .n-hero-stats-inner{padding:0 20px 20px;}
   .n-sec{padding:52px 20px;}
-  .t-h2{font-size:clamp(20px,5vw,32px);}
+  .t-h2{font-size:clamp(26px,6vw,36px);}
   .phones-showcase{gap:0;}
   .phone-device{width:148px;border-radius:22px;padding:7px;}
   .phone-device.center-phone{width:168px;border-radius:26px;padding:9px;}
@@ -432,7 +432,7 @@ img{max-width:100%;display:block;}
 }
 @media(max-width:540px){
   .t-h1{font-size:36px;letter-spacing:-1px;}
-  .n-page-h1{font-size:24px;}
+  .n-page-h1{font-size:30px;letter-spacing:-1px;}
   .n-footer{padding:32px 20px 16px;}
   .n-footer-grid{grid-template-columns:1fr 1fr;gap:16px;margin-bottom:24px;}
   .n-footer-brand{grid-column:1/-1;}
