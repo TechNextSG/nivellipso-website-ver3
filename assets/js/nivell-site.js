@@ -509,10 +509,7 @@ if (document.readyState === 'loading') {
 // ── LANGUAGE UI UPDATE ──
 // Updates the flag/code display in the lang switcher UI
 function updateLangUI(lang, clickedEl) {
- const flags = {de:'🇩🇪',fr:'🇫🇷',it:'🇮🇹',en:'🇬🇧',ru:'🇷🇺',es:'🇪🇸'};
- const flagEl = document.getElementById('lFlag');
  const codeEl = document.getElementById('lCode');
- if (flagEl) flagEl.textContent = flags[lang] || '🌐';
  if (codeEl) codeEl.textContent = lang.toUpperCase();
  document.querySelectorAll('.lang-opt').forEach(el => el.classList.remove('active'));
  if (clickedEl) clickedEl.classList.add('active');
