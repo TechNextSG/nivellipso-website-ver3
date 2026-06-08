@@ -164,11 +164,12 @@
  .vis-hero { padding: 90px 20px 56px; }
  .vis-hero-inner { grid-template-columns: 1fr; gap: 40px; }
  .vis-sec { padding: 56px 20px; }
- .feat-grid { grid-template-columns: 1fr; gap: 8px; }
- .feat-card { padding: 14px 16px; display: flex; align-items: flex-start; gap: 12px; }
- .ico-circle { width: 36px; height: 36px; flex-shrink: 0; margin-bottom: 0; }
- .ico-circle svg { width: 16px; height: 16px; }
- .feat-card > div { flex: 1; }
+ .feat-grid { grid-template-columns: 1fr; gap: 6px; }
+ .feat-card { padding: 14px 16px; display: grid; grid-template-columns: 40px 1fr; grid-template-rows: auto auto; column-gap: 12px; row-gap: 4px; }
+ .feat-card .ico-circle { grid-column: 1; grid-row: 1 / span 2; align-self: start; width: 36px; height: 36px; margin-bottom: 0; }
+ .feat-card .ico-circle svg { width: 16px; height: 16px; }
+ .feat-card .t-h3 { grid-column: 2; grid-row: 1; font-size: 14px; margin: 0; }
+ .feat-card p { grid-column: 2; grid-row: 2; font-size: 12px !important; line-height: 1.5; margin: 0; }
  .info-grid { grid-template-columns: 1fr; }
  .bm-grid { grid-template-columns: 1fr; gap: 10px; }
  .roadmap { grid-template-columns: 1fr 1fr; gap: 10px; }
