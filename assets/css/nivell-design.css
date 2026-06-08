@@ -408,7 +408,7 @@ img{max-width:100%;display:block;}
   .n-mobile-menu{top:64px;}
   .n-hero-content{padding:0 20px;}
   .n-hero-sub{font-size:16px;}
-  .n-hero-btns{flex-direction:row;align-items:center;justify-content:center;flex-wrap:wrap;gap:10px;}
+  .n-hero-btns{flex-direction:row;align-items:center;justify-content:center;flex-wrap:wrap;gap:6px;}
   .btn-3d,.btn-3d-ghost{padding:13px 26px;font-size:13px;width:auto;}
   .n-stats-bar{display:grid;grid-template-columns:1fr 1fr;width:100%;}
   .n-stat{border-right:none;border-bottom:1px solid rgba(255,255,255,.1);}

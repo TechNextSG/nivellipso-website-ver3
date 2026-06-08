@@ -184,14 +184,14 @@
  .roadmap { grid-template-columns: 1fr; }
  .ml-num { display: none; }
  .pod-num { display: none; }
- /* Shrink phones so all 3 fit side-by-side — exact same grouped layout as desktop */
- .phones-showcase { transform: none; margin-bottom: 0; overflow: visible; }
- .phone-device { width: 88px !important; border-radius: 16px !important; padding: 5px !important; }
- .phone-device.ctr { width: 104px !important; border-radius: 20px !important; padding: 6px !important; }
- .phone-screen { min-height: 170px !important; }
- .phone-notch { width: 28px; height: 3px; margin-bottom: 3px; }
- .phone-wrap.left { transform: rotate(-13deg) translateY(14px) translateX(10px); }
- .phone-wrap.right { transform: rotate(13deg) translateY(14px) translateX(-10px); }
+ /* Phones wider/true-to-size, centered, allowed to bleed off edges */
+ .phones-showcase { transform: none; margin-bottom: 0; overflow: visible; justify-content: center; }
+ .phone-device { width: 130px !important; border-radius: 22px !important; padding: 7px !important; }
+ .phone-device.ctr { width: 150px !important; border-radius: 26px !important; padding: 8px !important; }
+ .phone-screen { min-height: 260px !important; }
+ .phone-notch { width: 36px; height: 4px; margin-bottom: 4px; }
+ .phone-wrap.left { transform: rotate(-13deg) translateY(22px) translateX(18px); }
+ .phone-wrap.right { transform: rotate(13deg) translateY(22px) translateX(-18px); }
 }
 
 /* ══ MOBILE (640px) ═══════════════════════════════════════════════════ */
