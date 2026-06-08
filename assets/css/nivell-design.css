@@ -430,8 +430,15 @@ img{max-width:100%;display:block;}
 @media(max-width:540px){
   .t-h1{font-size:26px;letter-spacing:-.5px;}
   .n-page-h1{font-size:24px;}
-  .n-footer-grid{grid-template-columns:1fr;gap:20px;}
-  .n-footer-bottom{flex-direction:column;gap:8px;text-align:center;}
+  .n-footer{padding:32px 20px 16px;}
+  .n-footer-grid{grid-template-columns:1fr 1fr;gap:16px;margin-bottom:24px;}
+  .n-footer-brand{grid-column:1/-1;}
+  .n-footer-brand p{font-size:12px;margin-top:8px;}
+  .n-footer-col h4{margin-bottom:10px;}
+  .n-footer-col ul li{margin-bottom:6px;}
+  .n-footer-col ul li a{font-size:12px;}
+  .n-footer-bottom{flex-direction:column;gap:6px;text-align:center;}
+  .n-footer-bottom p{font-size:11px;}
   .n-grid-3.tips-grid{grid-template-columns:1fr;}
   .phones-showcase{transform:scale(.88);transform-origin:center top;margin:-10px 0;}
   .n-stats-bar{width:100%;}
