@@ -164,7 +164,12 @@
  .vis-hero { padding: 90px 20px 56px; }
  .vis-hero-inner { grid-template-columns: 1fr; gap: 40px; }
  .vis-sec { padding: 56px 20px; }
- .feat-grid { grid-template-columns: 1fr; gap: 10px; }
+ .feat-grid { grid-template-columns: 1fr 1fr; gap: 8px; }
+ .feat-card { padding: 16px 14px; }
+ .ico-circle { width: 32px; height: 32px; margin-bottom: 8px; }
+ .ico-circle svg { width: 14px; height: 14px; }
+ .feat-card h3 { font-size: 13px !important; margin-bottom: 4px; }
+ .feat-card p { font-size: 12px !important; line-height: 1.5; }
  .info-grid { grid-template-columns: 1fr; }
  .bm-grid { grid-template-columns: 1fr; gap: 10px; }
  .roadmap { grid-template-columns: 1fr 1fr; gap: 10px; }
@@ -184,6 +189,13 @@
  .roadmap { grid-template-columns: 1fr; }
  .ml-num { display: none; }
  .pod-num { display: none; }
+ /* Hero heading + stats smaller on mobile */
+ .vis-hero h1 { font-size: 22px !important; letter-spacing: -0.5px !important; margin-bottom: 12px !important; }
+ .vis-hero p { font-size: 13px !important; line-height: 1.6 !important; margin-bottom: 20px !important; }
+ .vis-hero [style*="font-size:14px;letter-spacing:2.5px"] { font-size: 10px !important; padding: 4px 10px !important; margin-bottom: 12px !important; }
+ .vis-hero [style*="grid-template-columns:repeat(3,1fr)"] { margin-top: 20px !important; padding-top: 14px !important; }
+ .vis-hero [style*="font-size:28px"] { font-size: 18px !important; }
+ .vis-hero [style*="font-size:9px"] { font-size: 7px !important; }
  /* Force all 3 phones in one row — no wrapping, allow edge bleed */
  .phones-showcase {
    flex-wrap: nowrap !important;
