@@ -404,8 +404,8 @@ img{max-width:100%;display:block;}
   /* Hide flag emoji (renders as "GB" text on many Android devices) — show code text only */
   nav .lang-btn #lFlag{display:none;}
   nav .lang-btn #lCode{display:inline !important;}
-  /* Compact Doctor Portal — same red filled style as desktop, just smaller */
-  nav .btn-3d{padding:9px 16px !important;font-size:12px !important;min-height:unset !important;box-shadow:0 3px 0 var(--red-dark) !important;}
+  /* Doctor Portal nav button — compact, no text wrap */
+  nav .btn-3d{padding:10px 14px !important;font-size:11px !important;min-height:unset !important;white-space:nowrap;box-shadow:0 3px 0 var(--red-dark) !important;letter-spacing:.4px;}
   .n-page-hero{margin-top:64px;padding:44px 20px 36px;}
   .n-mobile-menu{top:64px;}
   .n-hero-content{padding:0 20px;}
