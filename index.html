@@ -250,6 +250,12 @@
   .ig-grid{grid-template-columns:repeat(2,1fr);}
   .about-stat-box{padding:14px 12px;}
 }
+
+/* CONTACT FORM MOBILE */
+@media(max-width:640px){
+  .cf-outer-grid{grid-template-columns:1fr !important;gap:36px !important;}
+  .cf-form-row{grid-template-columns:1fr !important;}
+}
 </style>
 </head>
 <body>
@@ -650,7 +656,7 @@ function applyPromo(){
 <!-- ── CONTACT FORM ── -->
 <section class="n-sec n-sec-bg" id="contact-form">
 <div class="n-sec-inner">
-<div class="n-fade" style="display:grid;grid-template-columns:1fr 1.6fr;gap:72px;">
+<div class="n-fade cf-outer-grid" style="display:grid;grid-template-columns:1fr 1.6fr;gap:72px;">
 <div>
 <div class="t-label" data-i18n="cf_l">Contact</div>
 <h2 class="t-h2" data-i18n="cf_h">Get in Touch<br/>with Us.</h2>
@@ -664,11 +670,11 @@ function applyPromo(){
 </div>
 </div>
 <form action="mailto:albin.brkic@nivellipso.com" enctype="text/plain" method="POST" onsubmit="setTimeout(()=&gt;{this.reset();this.querySelector('.form-confirm').style.display='block';},100)">
-<div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px;">
+<div class="cf-form-row" style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px;">
 <div><label data-i18n="fm_n" style="display:block;font-size:14px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:6px;">Your Name *</label><input name="Name" onblur="this.style.borderColor='#E0E0E0'" onfocus="this.style.borderColor='#C00000'" required="" style="width:100%;padding:11px 14px;border:1px solid var(--border);font-family:Arial,sans-serif;font-size:14px;outline:none;" type="text"/></div>
 <div><label data-i18n="fm_c" style="display:block;font-size:14px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:6px;">Practice</label><input name="Praxis" onblur="this.style.borderColor='#E0E0E0'" onfocus="this.style.borderColor='#C00000'" style="width:100%;padding:11px 14px;border:1px solid var(--border);font-family:Arial,sans-serif;font-size:14px;outline:none;" type="text"/></div>
 </div>
-<div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px;">
+<div class="cf-form-row" style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px;">
 <div><label data-i18n="fm_e" style="display:block;font-size:14px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:6px;">E-Mail *</label><input name="Email" onblur="this.style.borderColor='#E0E0E0'" onfocus="this.style.borderColor='#C00000'" required="" style="width:100%;padding:11px 14px;border:1px solid var(--border);font-family:Arial,sans-serif;font-size:14px;outline:none;" type="email"/></div>
 <div><label data-i18n="fm_p" style="display:block;font-size:14px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:6px;">Telefon</label><input name="Telefon" onblur="this.style.borderColor='#E0E0E0'" onfocus="this.style.borderColor='#C00000'" style="width:100%;padding:11px 14px;border:1px solid var(--border);font-family:Arial,sans-serif;font-size:14px;outline:none;" type="tel"/></div>
 </div>
@@ -685,12 +691,12 @@ function applyPromo(){
 <div class="n-sec-inner">
 <div style="display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:24px;" class="n-fade">
 <div>
-<div class="t-label">Social Media</div>
-<h2 class="t-h2" style="margin-bottom:0;">Follow Us.</h2>
+<div class="t-label" data-i18n="ig_l">Social Media</div>
+<h2 class="t-h2" style="margin-bottom:0;" data-i18n="ig_h">Folgen Sie uns.</h2>
 </div>
 <div style="display:flex;align-items:center;gap:16px;">
 <a href="https://www.instagram.com/nivellipso/?hl=de" target="_blank" style="font-size:16px;font-weight:700;color:var(--red);text-decoration:none;">@nivellipso</a>
-<a href="https://www.instagram.com/nivellipso/?hl=de" target="_blank" class="btn-3d-outline" style="font-size:12px;padding:8px 18px;">Follow on Instagram</a>
+<a href="https://www.instagram.com/nivellipso/?hl=de" target="_blank" class="btn-3d-outline" style="font-size:12px;padding:8px 18px;"><span data-i18n="ig_btn">Auf Instagram folgen</span></a>
 </div>
 </div>
 <div class="ig-embeds n-fade" id="igGrid">
