@@ -386,8 +386,12 @@ img{max-width:100%;display:block;}
   .phones-showcase{flex-wrap:wrap;max-width:100%;}
   .n-links{display:none !important;}
   .n-hamburger{display:flex !important;}
-  /* Hide nav lang-btn + social icons on mobile (moved into hamburger menu) */
-  nav .lang-btn,nav .n-social{display:none !important;}
+  /* Show lang-btn in nav on mobile, hide social icons */
+  nav .n-social{display:none !important;}
+  nav .lang-btn{display:flex !important;padding:6px 8px;font-size:11px;gap:3px;}
+  nav .lang-btn #lCode{display:none;}
+  /* Compact Doctor Portal button on mobile */
+  nav .btn-3d{padding:8px 12px !important;font-size:11px !important;letter-spacing:.2px;}
   .n-page-hero{margin-top:64px;padding:44px 20px 36px;}
   .n-mobile-menu{top:64px;}
   .n-hero-content{padding:0 20px;}
