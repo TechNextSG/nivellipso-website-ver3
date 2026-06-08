@@ -139,7 +139,8 @@ img{max-width:100%;display:block;}
 .n-links a.active{color:var(--red);font-weight:700;}
 /* Lang switcher */
 .lang-btn{border:1px solid var(--border);background:none;font-family:'Inter',Arial,sans-serif;font-size:13px;font-weight:700;padding:9px 12px;cursor:pointer;color:var(--text);display:flex;align-items:center;gap:5px;letter-spacing:.5px;position:relative;}
-#lFlag{display:none !important;}
+#lFlag{display:inline-flex;align-items:center;line-height:1;}
+#lFlag img{width:20px;height:14px;object-fit:cover;border-radius:2px;display:block;}
 .lang-dropdown{display:none;position:absolute;top:calc(100% + 2px);right:0;background:white;border:1px solid var(--border);min-width:140px;box-shadow:0 8px 24px rgba(0,0,0,.1);z-index:200;}
 .lang-btn:hover .lang-dropdown,.lang-btn.open .lang-dropdown{display:block;}
 .lang-opt{padding:10px 14px;font-size:13px;cursor:pointer;display:flex;align-items:center;gap:8px;}
@@ -402,8 +403,6 @@ img{max-width:100%;display:block;}
   /* Show lang-btn in nav on mobile, hide social icons */
   nav .n-social{display:none !important;}
   nav .lang-btn{display:flex !important;padding:5px 10px;font-size:12px;font-weight:700;gap:3px;border:1px solid var(--border);}
-  /* Hide flag emoji (renders as "GB" text on many Android devices) — show code text only */
-  nav .lang-btn #lFlag{display:none;}
   nav .lang-btn #lCode{display:inline !important;}
   /* Doctor Portal nav button — compact, no text wrap */
   nav .btn-3d{padding:10px 14px !important;font-size:11px !important;min-height:unset !important;white-space:nowrap;box-shadow:0 3px 0 var(--red-dark) !important;letter-spacing:.4px;}
