@@ -483,13 +483,15 @@ function setActiveNav() {
 window.setActiveNav = setActiveNav;
 
 // Restore saved language from localStorage on page load (so EN/DE persists across pages)
+// Falls back to 'de' if no preference saved (German is the site default)
 function restoreNivellLang() {
  try {
   const saved = localStorage.getItem('nivell_lang');
-  if (saved && window.T && window.T[saved]) {
-   setNivellLang(saved, window.T);
-   const opt = document.querySelector('.lang-opt[data-lang="'+saved+'"]');
-   if (opt) updateLangUI(saved, opt);
+  const lang = (saved && window.T && window.T[saved]) ? saved : 'de';
+  if (window.T && window.T[lang]) {
+   setNivellLang(lang, window.T);
+   const opt = document.querySelector('.lang-opt[data-lang="'+lang+'"]');
+   if (opt) updateLangUI(lang, opt);
   }
  } catch (e) {}
 }
