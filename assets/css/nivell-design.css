@@ -314,7 +314,7 @@ img{max-width:100%;display:block;}
 .n-footer-col ul li a{font-size:13px;color:rgba(255,255,255,.45);text-decoration:none;transition:all .2s;display:inline-block;}
 .n-footer-col ul li a:hover{color:white;transform:translateX(3px);}
 .n-footer-bottom{border-top:1px solid rgba(255,255,255,.08);padding-top:22px;display:flex;justify-content:space-between;align-items:center;}
-.n-footer-bottom p{font-size:10px;color:rgba(255,255,255,.2);}
+.n-footer-bottom p{font-size:9px;color:rgba(255,255,255,.18);}
 .n-conf{font-size:10px;color:rgba(255,255,255,.15);letter-spacing:2.5px;text-transform:uppercase;}
 
 /* ══ SCROLL ANIMATIONS ═══════════════════════ */
@@ -441,7 +441,7 @@ img{max-width:100%;display:block;}
   .n-footer-col ul li{margin-bottom:6px;}
   .n-footer-col ul li a{font-size:12px;}
   .n-footer-bottom{flex-direction:column;gap:6px;text-align:center;}
-  .n-footer-bottom p{font-size:11px;}
+  .n-footer-bottom p{font-size:9px;}
   .n-grid-3.tips-grid{grid-template-columns:1fr;}
   .phones-showcase{transform:scale(.88);transform-origin:center top;margin:-10px 0;}
   .n-stats-bar{width:100%;}
