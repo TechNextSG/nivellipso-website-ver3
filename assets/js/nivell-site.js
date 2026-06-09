@@ -62,7 +62,7 @@ const NIVELLIPSO_KNOWLEDGE = [
 
  // ═══ BEHANDLUNGSDAUER & WORKFLOW ═══
  { keywords: ['dauer','wie lange behandlung','behandlungsdauer','wie viele monate','monate','duration'],
-   answer: "Behandlungsdauer (Richtwerte):\n\n• Einfache Fälle (bis 7 Stufen): 3–4 Monate\n• Mittel (8–14 Stufen): 4–7 Monate\n• Komplex (15–21 Stufen): 7–11 Monate\n• Unlimited (bis 36 Stufen): 9–18 Monate\n\nStufenwechsel typisch alle 2 Wochen. Schnellerer Wechsel (7–10 Tage) bei guter Compliance möglich." },
+   answer: "Behandlungsdauer (Richtwerte):\n\n• Leichte Korrekturen (bis 5 Stufen): 3–4 Monate\n• Mittlere Komplexität (8–14 Stufen): 4–7 Monate\n• Komplexe Fälle (15–21 Stufen): 7–11 Monate\n\nStufenwechsel typisch alle 2 Wochen. Schnellerer Wechsel (7–10 Tage) bei guter Compliance möglich." },
  { keywords: ['wechsel','stufenwechsel','wann wechseln','wie oft wechseln'],
    answer: "Stufenwechsel:\n\nStandard: alle 14 Tage neue Schiene einsetzen. Bei guter Compliance (22+h Tragezeit, kein Druckgefühl mehr) ist Wechsel nach 10 Tagen möglich.\n\nNicht früher wechseln — die Zähne brauchen Zeit für die biomechanische Antwort." },
  { keywords: ['lieferzeit','liefer','versand','wann fertig','dauer fertigung','delivery'],
