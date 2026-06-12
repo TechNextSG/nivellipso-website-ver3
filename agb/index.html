@@ -190,7 +190,7 @@
 <script src="../assets/js/nivell-i18n.js?v=20260613"></script>
 <script src="../assets/js/nivell-site.js?v=20260612"></script>
 <script>
-const T={
+var _T={
   de:{
     n_home:'Home',n_prod:'Produkte',n_about:'Über uns',n_align:'Schienen',n_brack:'Brackets',n_white:'Whitening',n_con:'Kontakt',n_portal:'Doctor Portal →',
     h_badge:'smiles made in Switzerland.',ft_since:'Seit 2015.',ft_pr:'Produkte',ft_al:'Schienen',ft_br:'Brackets',ft_wh:'Whitening',ft_co:'Unternehmen',ft_ab:'Über uns',ft_te:'Team',ft_fq:'FAQ',ft_po:'Doctor Portal',ft_le:'Rechtliches',ft_to:'AGB',ft_pp:'Datenschutz',ft_im:'Impressum',
@@ -224,9 +224,9 @@ const T={
     agb_p9:'Swiss law applies, excluding the UN Convention on Contracts for the International Sale of Goods (CISG). The exclusive place of jurisdiction for all disputes is Olten, Switzerland.'
   }
 };
-window.T=T;
-document.querySelectorAll('.lang-opt').forEach(function(btn){var lang=btn.getAttribute('data-lang');btn.onclick=function(){setNivellLang(lang,T);updateLangUI(lang,this);};});
-(()=>{const s=localStorage.getItem('nivell_lang')||'de';setNivellLang(s,T);const o=document.querySelector('.lang-opt[data-lang="'+s+'"]');if(o)updateLangUI(s,o);})();
+window.T=_T;
+document.querySelectorAll('.lang-opt').forEach(function(btn){var lang=btn.getAttribute('data-lang');btn.onclick=function(){setNivellLang(lang,_T);updateLangUI(lang,this);};});
+(()=>{var s=localStorage.getItem('nivell_lang')||'de';setNivellLang(s,_T);var o=document.querySelector('.lang-opt[data-lang="'+s+'"]');if(o)updateLangUI(s,o);})();
 </script>
 </body>
 </html>
