@@ -192,7 +192,9 @@
 <script>
 const T={
   de:{
-    n_home:'Home',n_prod:'Produkte',n_about:'Über uns',n_align:'Schienen',n_brack:'Brackets',n_white:'Whitening',n_shop:'Shop',n_vis:'VISIBAL',n_acad:'Academy',n_con:'Kontakt',n_portal:'Doctor Portal →',
+    n_home:'Home',n_prod:'Produkte',n_about:'Über uns',n_align:'Schienen',n_brack:'Brackets',n_white:'Whitening',n_con:'Kontakt',n_portal:'Doctor Portal →',
+    h_badge:'smiles made in Switzerland.',ft_since:'Seit 2015.',ft_pr:'Produkte',ft_al:'Schienen',ft_br:'Brackets',ft_wh:'Whitening',ft_co:'Unternehmen',ft_ab:'Über uns',ft_te:'Team',ft_fq:'FAQ',ft_po:'Doctor Portal',ft_le:'Rechtliches',ft_to:'AGB',ft_pp:'Datenschutz',ft_im:'Impressum',
+    cb_btn:'Fragen? Hier fragen.',cb_name:'nivellipso® Beratung',cb_status:'Klinische Beratung · Immer verfügbar',cb_welcome:'Guten Tag! Ich beantworte Ihre Fragen zu Schienen, Brackets, Preisen, dem Honor-Programm und VISIBAL.',cs1:'3-Schienen-System?',cs2:'Preise & Lieferzeit',cs3:'Was ist VISIBAL?',
     agb_title:'AGB – nivellipso®',agb_bc:'AGB',agb_h1:'Allgemeine Geschäftsbedingungen',agb_sub:'Stand: Juni 2026 · NIVELLMEDICAL AG',
     agb_s1:'1. Geltungsbereich',agb_s2:'2. Vertragsabschluss',agb_s3:'3. Preise und Zahlungsbedingungen',agb_s4:'4. Lieferung',agb_s5:'5. Eigentumsvorbehalt',agb_s6:'6. Gewährleistung',agb_s7:'7. Haftungsbeschränkung',agb_s8:'8. Datenschutz',agb_s9:'9. Anwendbares Recht und Gerichtsstand',
     agb_p1:'Diese AGB gelten für alle Bestellungen und Lieferungen von Produkten der NIVELLMEDICAL AG (nachfolgend «Verkäufer») an gewerbliche Kunden im Dentalbereich (nachfolgend «Käufer»). Abweichende Bedingungen des Käufers sind nur wirksam, wenn der Verkäufer diesen ausdrücklich schriftlich zustimmt.',
@@ -206,7 +208,9 @@ const T={
     agb_p9:'Es gilt Schweizer Recht unter Ausschluss des UN-Kaufrechts (CISG). Ausschliesslicher Gerichtsstand für alle Streitigkeiten ist Olten, Schweiz.'
   },
   en:{
-    n_home:'Home',n_prod:'Products',n_about:'About Us',n_align:'Aligners',n_brack:'Brackets',n_white:'Whitening',n_shop:'Shop',n_vis:'VISIBAL',n_acad:'Academy',n_con:'Contact',n_portal:'Doctor Portal →',
+    n_home:'Home',n_prod:'Products',n_about:'About Us',n_align:'Aligners',n_brack:'Brackets',n_white:'Whitening',n_con:'Contact',n_portal:'Doctor Portal →',
+    h_badge:'smiles made in Switzerland.',ft_since:'Since 2015.',ft_pr:'Products',ft_al:'Clear Aligners',ft_br:'Brackets',ft_wh:'Whitening',ft_co:'Company',ft_ab:'About Us',ft_te:'Team',ft_fq:'FAQ',ft_po:'Doctor Portal',ft_le:'Legal',ft_to:'Terms of Service',ft_pp:'Privacy Policy',ft_im:'Imprint',
+    cb_btn:'Ask a question',cb_name:'nivellipso® Consulting',cb_status:'Clinical expertise · Always available',cb_welcome:'Hello! I answer your questions about aligners, brackets, pricing, the Honor programme and VISIBAL.',cs1:'3-Schienen System?',cs2:'Pricing & delivery',cs3:'What is VISIBAL?',
     agb_title:'Terms of Service – nivellipso®',agb_bc:'Terms of Service',agb_h1:'Terms of Service',agb_sub:'As of June 2026 · NIVELLMEDICAL AG',
     agb_s1:'1. Scope',agb_s2:'2. Contract Formation',agb_s3:'3. Prices and Payment',agb_s4:'4. Delivery',agb_s5:'5. Retention of Title',agb_s6:'6. Warranty',agb_s7:'7. Limitation of Liability',agb_s8:'8. Data Protection',agb_s9:'9. Governing Law and Jurisdiction',
     agb_p1:'These Terms of Service apply to all orders and deliveries of products from NIVELLMEDICAL AG (hereinafter "Seller") to commercial customers in the dental sector (hereinafter "Buyer"). Terms and conditions of the Buyer shall only apply if the Seller has expressly agreed to them in writing.',
@@ -220,7 +224,7 @@ const T={
     agb_p9:'Swiss law applies, excluding the UN Convention on Contracts for the International Sale of Goods (CISG). The exclusive place of jurisdiction for all disputes is Olten, Switzerland.'
   }
 };
-Object.keys(T).forEach(function(l){if(!window.T[l])window.T[l]={};Object.assign(window.T[l],T[l]);});
+window.T=T;
 (()=>{const s=localStorage.getItem('nivell_lang')||'de';setNivellLang(s,window.T);const o=document.querySelector('.lang-opt[data-lang="'+s+'"]');if(o)updateLangUI(s,o);})();
 </script>
 </body>
