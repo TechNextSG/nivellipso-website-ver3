@@ -205,7 +205,8 @@ const T={
   es:{n_home:'Inicio',n_align:'Alineadores',n_brack:'Brackets',n_white:'Blanqueamiento',n_shop:'Tienda',n_vis:'VISIBAL',n_acad:'Academy',n_con:'Contacto',n_portal:'Portal médico →',im_bc:'Aviso legal',im_h1:'Aviso legal',im_sub:'Información legal conforme al derecho suizo.',im_note:'Nota editorial: Introduzca el número UID oficial de NIVELLMEDICAL AG. Obligatorio para empresas suizas.',im_s1:'Proveedor',im_s2:'Contacto',im_s3:'Representante legal',im_s4:'Registro mercantil',im_s5:'Responsable del contenido',im_s6:'Aviso de responsabilidad',im_s7:'Derechos de autor'}
 };
 window.T=T;
-(()=>{const s=localStorage.getItem('nivell_lang')||'de';setNivellLang(s,window.T);const o=document.querySelector('.lang-opt[data-lang="'+s+'"]');if(o)updateLangUI(s,o);})();
+document.querySelectorAll('.lang-opt').forEach(function(btn){var lang=btn.getAttribute('data-lang');btn.onclick=function(){setNivellLang(lang,T);updateLangUI(lang,this);};});
+(()=>{const s=localStorage.getItem('nivell_lang')||'de';setNivellLang(s,T);const o=document.querySelector('.lang-opt[data-lang="'+s+'"]');if(o)updateLangUI(s,o);})();
 </script>
 </body>
 </html>

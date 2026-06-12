@@ -208,7 +208,8 @@ const T={
   es:{n_home:'Inicio',n_align:'Alineadores',n_brack:'Brackets',n_white:'Blanqueamiento',n_shop:'Tienda',n_vis:'VISIBAL',n_acad:'Academy',n_con:'Contacto',n_portal:'Portal médico →',ds_bc:'Privacidad',ds_h1:'Política de privacidad',ds_sub:'Junio 2026 · conforme a la nLPD (CH) y el RGPD (UE).',ds_note:'Nota editorial: Esta política es una plantilla. Verifíquela con un asesor legal antes de publicarla.',ds_s1:'1. Responsable del tratamiento',ds_s2:'2. Recogida y tratamiento de datos',ds_s3:'3. Formulario de contacto y boletín',ds_s4:'4. Archivos de registro del servidor',ds_s5:'5. Análisis web (Plausible Analytics)',ds_s6:'6. Almacenamiento local (localStorage)',ds_s7:'7. Contenido de terceros integrado',ds_s8:'8. Asistente en línea',ds_s9:'9. Sus derechos',ds_s10:'10. Seguridad de los datos',ds_s11:'11. Cambios'}
 };
 window.T=T;
-(()=>{const s=localStorage.getItem('nivell_lang')||'de';setNivellLang(s,window.T);const o=document.querySelector('.lang-opt[data-lang="'+s+'"]');if(o)updateLangUI(s,o);})();
+document.querySelectorAll('.lang-opt').forEach(function(btn){var lang=btn.getAttribute('data-lang');btn.onclick=function(){setNivellLang(lang,T);updateLangUI(lang,this);};});
+(()=>{const s=localStorage.getItem('nivell_lang')||'de';setNivellLang(s,T);const o=document.querySelector('.lang-opt[data-lang="'+s+'"]');if(o)updateLangUI(s,o);})();
 </script>
 </body>
 </html>

@@ -225,7 +225,8 @@ const T={
   }
 };
 window.T=T;
-(()=>{const s=localStorage.getItem('nivell_lang')||'de';setNivellLang(s,window.T);const o=document.querySelector('.lang-opt[data-lang="'+s+'"]');if(o)updateLangUI(s,o);})();
+document.querySelectorAll('.lang-opt').forEach(function(btn){var lang=btn.getAttribute('data-lang');btn.onclick=function(){setNivellLang(lang,T);updateLangUI(lang,this);};});
+(()=>{const s=localStorage.getItem('nivell_lang')||'de';setNivellLang(s,T);const o=document.querySelector('.lang-opt[data-lang="'+s+'"]');if(o)updateLangUI(s,o);})();
 </script>
 </body>
 </html>
