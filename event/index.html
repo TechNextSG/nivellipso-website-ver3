@@ -278,9 +278,10 @@
 </div>
 </footer>
 
-<script src="../assets/js/nivell-i18n.js?v=20260612"></script>
+<script src="../assets/js/nivell-i18n.js?v=20260613"></script>
 <script src="../assets/js/nivell-site.js?v=20260612"></script>
 <script>
+(function(){var sl=localStorage.getItem('nivell_lang')||'de';setNivellLang(sl,window.T);var o=document.querySelector('.lang-opt[data-lang="'+sl+'"]');if(o)updateLangUI(sl,o);})();
 document.addEventListener('DOMContentLoaded', () => {
   initScrollAnimations();
   setActiveNav();

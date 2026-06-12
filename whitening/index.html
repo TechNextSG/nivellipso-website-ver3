@@ -317,19 +317,14 @@
 </div>
 </div>
 </footer>
-<script src="../assets/js/nivell-i18n.js?v=20260612"></script>
+<script src="../assets/js/nivell-i18n.js?v=20260613"></script>
 <script src="../assets/js/nivell-site.js?v=20260612"></script>
 <script>
 function toggleMenu(){
  document.getElementById('mobileMenu').classList.toggle('open');
  document.getElementById('hamburger').classList.toggle('open');
 }
-document.addEventListener('DOMContentLoaded',()=>{
- initScrollAnimations();
- setActiveNav();
-  const _sl = localStorage.getItem('nivell_lang');
-  if (_sl && window.T) { setNivellLang(_sl, window.T); updateLangUI(_sl, document.querySelector('.lang-opt[data-lang="'+_sl+'"]')); }
-});
+(function(){var sl=localStorage.getItem('nivell_lang')||'de';setNivellLang(sl,window.T);var o=document.querySelector('.lang-opt[data-lang="'+sl+'"]');if(o)updateLangUI(sl,o);})();
 // Scroll-hide nav with hysteresis
 (function(){
   var nav = document.querySelector('.n-nav');

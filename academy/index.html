@@ -383,7 +383,7 @@
 </div>
 </div>
 </footer>
-<script src="../assets/js/nivell-i18n.js?v=20260612"></script>
+<script src="../assets/js/nivell-i18n.js?v=20260613"></script>
 <script src="../assets/js/nivell-site.js?v=20260612"></script>
 <script>
 // Click-to-load YouTube (privacy-friendly: no YouTube iframe/cookies until the user clicks).
@@ -419,11 +419,8 @@ function toggleMenu(){
  document.getElementById('mobileMenu').classList.toggle('open');
  document.getElementById('hamburger').classList.toggle('open');
 }
+(function(){var sl=localStorage.getItem('nivell_lang')||'de';setNivellLang(sl,window.T);var o=document.querySelector('.lang-opt[data-lang="'+sl+'"]');if(o)updateLangUI(sl,o);})();
 document.addEventListener('DOMContentLoaded',()=>{
- initScrollAnimations();
- setActiveNav();
-  const _sl = localStorage.getItem('nivell_lang');
-  if (_sl && window.T) { setNivellLang(_sl, window.T); updateLangUI(_sl, document.querySelector('.lang-opt[data-lang="'+_sl+'"]')); }
  document.getElementById('cat-videos').style.display='block';
  document.querySelectorAll('#cat-videos .n-fade').forEach(el=>setTimeout(()=>el.classList.add('visible'),100));
 });

@@ -739,25 +739,10 @@ function applyPromo(){
   }).catch(function(){});
 })();
 </script>
-<script src="assets/js/nivell-i18n.js?v=20260612"></script>
+<script src="assets/js/nivell-i18n.js?v=20260613"></script>
 <script src="assets/js/nivell-site.js?v=20260612"></script>
 <script>
-// ── TRANSLATIONS ──
-
-function updateLangUI(lang, clickedEl) {
- document.getElementById('lCode').textContent = lang.toUpperCase();
- document.querySelectorAll('.lang-opt').forEach(el => el.classList.remove('active'));
- if(clickedEl) clickedEl.classList.add('active');
-}
-
-// Init on load
-document.addEventListener('DOMContentLoaded', () => {
- const savedLang = localStorage.getItem('nivell_lang') || 'de';
- if (savedLang !== 'de') {
- setNivellLang(savedLang, T);
- updateLangUI(savedLang, document.querySelector(`.lang-opt[data-lang="${savedLang}"]`));
- }
-});
+(function(){var sl=localStorage.getItem('nivell_lang')||'de';setNivellLang(sl,window.T);var o=document.querySelector('.lang-opt[data-lang="'+sl+'"]');if(o)updateLangUI(sl,o);})();
 </script>
 <button class="chat-toggle" id="chatToggle" onclick="toggleNivellChat()">
 <svg class="c-icon" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
