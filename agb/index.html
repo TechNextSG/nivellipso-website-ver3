@@ -224,13 +224,7 @@ const T={
   }
 };
 window.T=T;
-document.addEventListener('DOMContentLoaded',()=>{
-  const saved = localStorage.getItem('nivell_lang')||'de';
-  setNivellLang(saved, T);
-  window.T = T;
-  const opt = document.querySelector('.lang-opt[data-lang="'+saved+'"]');
-  if(opt) updateLangUI(saved, opt);
-});
+(()=>{const s=localStorage.getItem('nivell_lang')||'de';setNivellLang(s,T);const o=document.querySelector('.lang-opt[data-lang="'+s+'"]');if(o)updateLangUI(s,o);})();
 </script>
 </body>
 </html>
