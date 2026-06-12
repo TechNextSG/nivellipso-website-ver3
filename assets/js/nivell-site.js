@@ -1,4 +1,4 @@
-/**
+﻿/**
  * ═══════════════════════════════════════════════════
  * NIVELLMEDICAL AG — Shared Site Integration
  * nivell-site.js · Version 5.0 · Mai 2026
@@ -18,7 +18,7 @@ const NIVELL_CHAT_API_TIMEOUT_MS = 8000;
 const NIVELLIPSO_KNOWLEDGE = [
  // ═══ PREISE & ANGEBOTE ═══
  { keywords: ['preis','kosten','chf','gebühr','gebuehr','tarif','price','cost','wie teuer','kostet'],
-   answer: "Unsere Preise (gültig ab 01.05.2026, exkl. MWSt.):\n\n• Single Arch: CHF 590 – CHF 1'450\n• Dual Arch: CHF 920 – CHF 2'200 (Premium)\n• Touch-Up: CHF 390 / CHF 540\n• Retainer: ab CHF 120\n\nMit persönlichem Promo-Code aus dem Honor & Reward Programm zusätzlich vergünstigt. Details: albin.brkic@nivellipso.com" },
+   answer: "Unsere Preise (gültig ab 01.07.2026, exkl. MWSt.):\n\n• Single Arch: CHF 590 – CHF 1'450\n• Dual Arch: CHF 920 – CHF 2'200 (Premium)\n• Touch-Up: CHF 390 / CHF 540\n• Retainer: ab CHF 120\n\nMit persönlichem Promo-Code aus dem Honor & Reward Programm zusätzlich vergünstigt. Details: albin.brkic@nivellipso.com" },
  { keywords: ['promo','rabatt','discount','code','honor','reward','bonus','punkte','st tropez','reise','incentive'],
    answer: "Das nivellipso® Honor & Reward Programm:\n\n• Jeder aktive Nivellipso-Arzt erhält einen persönlichen Promo-Code\n• Discount bis −25% auf Schienen-Bestellungen\n• Brackets mit bis −30% für Nivellipso-Mitglieder\n• Anniversary-Boni und Volume-Rewards\n• Top-Tier: Incentive-Reise (z.B. St. Tropez)\n\nIhr persönlicher Code: albin.brkic@nivellipso.com anfragen." },
  { keywords: ['loyalität','loyalty','treue','jahresbonus','jahrestreue','10%'],
@@ -26,9 +26,9 @@ const NIVELLIPSO_KNOWLEDGE = [
 
  // ═══ DAS SYSTEM ═══
  { keywords: ['soft','regular','intense','phase','system','three','3-aligner','drei aligner','drei schienen','3-schienen','three-aligner','three-schienen'],
-   answer: "Das nivellipso® Three-Schienen-System hat drei Phasen:\n\n• SOFT: Sanfter Behandlungsstart, Gewebeanpassung (Phase 01)\n• REGULAR: Aktive Zahnbewegung, optimale Balance (Phase 02)\n• INTENSE: Finale Stabilisierung, keine Rezidive (Phase 03)\n\nDrei differenzierte Materialien pro Stufe (Wandstärken 0,75/0,85/1,0 mm). Biomechanisch überlegen, klinisch validiert." },
+   answer: "Das nivellipso® Three-Schienen-System hat drei Phasen:\n\n• SOFT: Sanfter Behandlungsstart, Gewebeanpassung (Phase 01)\n• REGULAR: Aktive Zahnbewegung, optimale Balance (Phase 02)\n• INTENSE: Finale Stabilisierung, keine Rezidive (Phase 03)\n\nDrei differenzierte Materialien pro Stufe (Wandstärken 0,50/0,65/0,75 mm). Biomechanisch überlegen, klinisch validiert." },
  { keywords: ['material','pet-g','pet g','kunststoff','biokompatibel','wandstärke','wandstaerke','stärke','staerke','0.75','0.85','1.0'],
-   answer: "Material:\n\n• Biokompatibles PET-G (medizinisch zugelassen)\n• Drei Wandstärken pro Stufe: 0,75 mm · 0,85 mm · 1,0 mm\n• Klar, geruchsneutral, BPA-frei\n• Hergestellt in der Schweiz\n• Vollständige Rückverfolgbarkeit jeder Charge\n\nMaterialwahl erfolgt phasenbasiert für optimale Kraft-Komfort-Balance." },
+   answer: "Material:\n\n• Biokompatibles PET-G (medizinisch zugelassen)\n• Drei Wandstärken pro Stufe: 0,50 mm · 0,65 mm · 0,75 mm\n• Klar, geruchsneutral, BPA-frei\n• Hergestellt in der Schweiz\n• Vollständige Rückverfolgbarkeit jeder Charge\n\nMaterialwahl erfolgt phasenbasiert für optimale Kraft-Komfort-Balance." },
  { keywords: ['single','einzel','einfach','simple','einfache fälle','einfache faelle'],
    answer: "Single-Schiene für einfache Fälle:\n\nFür leichte Korrekturen, finale Feineinstellungen oder Touch-Ups nach Rezidiven steht unser Single-Schienen-System zur Verfügung. Auf Anfrage planbar.\n\nKlinische Empfehlung für Standardfälle bleibt das Three-Schienen-System wegen der überlegenen Biomechanik." },
 
