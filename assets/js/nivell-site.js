@@ -104,9 +104,9 @@ const NIVELLIPSO_KNOWLEDGE = [
 
  // ═══ BRACKETS ═══
  { keywords: ['bracket','metall','keramik','selbstligierend','self-lig','self lig'],
-   answer: "nivellipso® Bracket-Linie:\n\n• Metall (MIM, 022\" Slot Roth/MBT): CHF 2.40/Stk · Standard\n• Keramik (monokristallin): CHF 7.80/Stk · ästhetisch\n• Selbstligierend (passiv): CHF 9.50/Stk · Premium\n\nNivellipso-Mitglieder: bis −30% Rabatt mit Promo-Code (Member-Pricing: CHF 1.32 / 4.29 / 5.23). Bestellung via Doctor Portal." },
+   answer: "nivellipso® Bracket-Linie:\n\n• Metall (MIM, 022\" Slot Roth/MBT): CHF 2.40/Stk · Standard\n• Keramik (monokristallin): CHF 7.80/Stk · ästhetisch\n• Selbstligierend (passiv): CHF 9.50/Stk · Premium\n\nNivellipso-Mitglieder: bis −30% Rabatt mit Promo-Code (Member-Pricing: CHF 1.32 / 4.29 / 5.23). Bestellung via Webshop (shop.nivellipso.com)." },
  { keywords: ['bogen','arch','niti','stahl','tma'],
-   answer: "Bögen & Drahttherapie:\n\n• NiTi rund: CHF 3.20/Stk · superelastisch, initial\n• NiTi rechteckig: CHF 4.10/Stk · Arbeitsphase\n• Stahl rund: CHF 1.80/Stk · stabilisierend\n• Stahl rechteckig: CHF 2.40/Stk · Finishing\n• TMA: CHF 5.60/Stk · controlled deflection\n\nMember-Pricing für Nivellipso-Mitglieder. Komplettsortiment im Doctor Portal." },
+   answer: "Bögen & Drahttherapie:\n\n• NiTi rund: CHF 3.20/Stk · superelastisch, initial\n• NiTi rechteckig: CHF 4.10/Stk · Arbeitsphase\n• Stahl rund: CHF 1.80/Stk · stabilisierend\n• Stahl rechteckig: CHF 2.40/Stk · Finishing\n• TMA: CHF 5.60/Stk · controlled deflection\n\nMember-Pricing für Nivellipso-Mitglieder. Komplettsortiment im Webshop (shop.nivellipso.com)." },
 
  // ═══ PROFI-FRAGEN ═══
  { keywords: ['kfo','kieferorthopäde','kieferorthopaede','orthodontist','spezialist'],
@@ -116,7 +116,7 @@ const NIVELLIPSO_KNOWLEDGE = [
  { keywords: ['referral','überweisung','ueberweisung','komplex','schwerer fall','complex case'],
    answer: "Komplexe Fälle:\n\nBei skelettalen Diskrepanzen, schweren Klasse II/III, Tiefbiss-Komponenten mit vertikaler Dysplasie oder kombinierten Behandlungen (kieferchirurgisch, parodontal):\n\n• Schiene + Brackets (kombinierte Therapie)\n• Schiene + Mini-Implantate (TADs)\n• Chirurgische Vor- oder Nachbehandlung\n\nSenden Sie uns den Fall zur Einschätzung: albin.brkic@nivellipso.com" },
  { keywords: ['fortbildung','academy','kurse','webinar','weiterbildung','training'],
-   answer: "Academy & Fortbildung:\n\nWir bieten:\n• Online-Webinare zu Indikation, Workflow, klinischen Tipps\n• Praxis-Onboarding für neue Anwender\n• Hands-on Workshops (Limited Editions)\n• Case Reviews mit unseren KFO-Beratern\n• Academy-Bibliothek mit Tutorials und Fall-Vorstellungen\n\nDetails: albin.brkic@nivellipso.com oder im Doctor Portal" },
+   answer: "Academy & Fortbildung:\n\nWir bieten:\n• Online-Webinare zu Indikation, Workflow, klinischen Tipps\n• Praxis-Onboarding für neue Anwender\n• Hands-on Workshops (Limited Editions)\n• Case Reviews mit unseren KFO-Beratern\n• Academy-Bibliothek mit Tutorials und Fall-Vorstellungen\n\nDetails: albin.brkic@nivellipso.com oder im Webshop (shop.nivellipso.com)" },
 
  // ═══ VISIBAL ═══
  { keywords: ['visibal','app','tracking','compliance','dashboard'],
@@ -300,7 +300,7 @@ const FOLLOW_UP_POOL = [
  { label: 'Retainer', q: 'Welche Retainer-Optionen gibt es?' },
  { label: 'Attachments', q: 'Wann braucht man Attachments?' },
  { label: 'Whitening', q: 'Gibt es ein Whitening-Angebot?' },
- { label: 'Doctor Portal', q: 'Wie bestelle ich im Doctor Portal?' },
+ { label: 'Webshop', q: 'Wie bestelle ich im Webshop?' },
  { label: 'Material & Qualität', q: 'Aus welchem Material sind die Schienen?' },
  { label: 'Klasse II', q: 'Kann ich Klasse-II-Fälle behandeln?' },
  { label: 'Klasse III', q: 'Wie sieht es mit Klasse-III-Fällen aus?' },
